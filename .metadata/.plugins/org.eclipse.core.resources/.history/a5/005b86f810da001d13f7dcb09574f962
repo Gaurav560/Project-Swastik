@@ -1,0 +1,115 @@
+<%@page import="com.entity.appointment"%>
+<%@page import="com.Database.DBConnect"%>
+<%@page import="com.dao.appointmentDao"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page isELIgnored="false"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Comment Page</title>
+<%@include file="../component/allcss.jsp"%>
+</head>
+<style>
+.paint-card {
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.back-img {
+	background-image: url("../img/h20.jpg");
+	background-repeat: no-repeat;
+	height: 95vh;
+	width: 100v;
+	background-size: cover;
+}
+</style>
+
+
+<body class="back-img">
+	<!-- agar login nahi hai to redirect kar dega login page pe(agar docObj nahi mila session ko) -->
+	<c:if test="${empty docObj }">
+		<c:redirect url="../doctor_login.jsp"></c:redirect>
+	</c:if>
+
+	<%@include file="navbar.jsp"%>
+	<div class="container p-5 m-5">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+
+				<div class="card paint-card">
+					<div class="card-body">
+
+						<p class="fs-3 text-center">Comment On Patient's Health</p>
+						<%
+							int id = Integer.parseInt(request.getParameter("Idd"));
+
+						appointmentDao aDao = new appointmentDao(DBConnect.getConnection());
+						appointment ap = aDao.getAppointmentDetailsId(id);
+						%>
+
+
+
+						<form class="row" action="../updateServlet" method="post">
+
+							<div class="col-md-6 mt-2">
+								<label>Patient's Name</label><input type="text"
+									value="<%=ap.getFullName()%>" class="form-control" readonly>
+							</div>
+
+
+
+
+
+							<div class="col-md-6 mt-2">
+								<label>Age</label><input type="number" value="<%=ap.getAge()%>"
+									class="form-control" readonly>
+							</div>
+							<div class="col-md-6 mt-2">
+								<label>Mobile Number</label><input type="number"
+									value="<%=ap.getNumber()%>" class="form-control" readonly>
+							</div>
+							<div class="col-md-6 mt-2">
+								<label>Disease</label><input type="text"
+									value="<%=ap.getDisease()%>" class="form-control" readonly>
+							</div>
+
+							<div class="col-md-12 mt-1">
+								<br> <label>Comment</label>
+								<textarea required name="comment" row="3" cols=""
+									class="form-control" placeholder="comment on patient's health"></textarea>
+							</div>
+							<input type="hidden" name="uid" value="<%=ap.getUserid()%>">
+							<input type="hidden" name="did" value="<%=ap.getDoctorId()%>">
+							
+							<button
+								class="btn btn-sm btn-success p-2 col-md-6 offset-md-3 mt-3">Submit</button>
+
+						</form>
+					</div>
+
+
+
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+		</div>
+
+
+
+
+
+	</div>
+
+</body>
+</html>
