@@ -34,15 +34,24 @@ User:
 
 [https://drive.google.com/file/d/15f41FD1myZt24AAo4bjtS9mBq2ZarJly/view?usp=share\_link](https://drive.google.com/file/d/15f41FD1myZt24AAo4bjtS9mBq2ZarJly/view?usp=share_link)
 
+
+
 <h2>Project Screenshots:</h2>
 
-<img src="https://github.com/Gaurav560/Project-Swastik/blob/master/Hospital_Management_System/src/main/webapp/img/doc1.jpg" alt="project-screenshot" width="1200" height="400/">
+<img src="https://github.com/Gaurav560/Project-Swastik/blob/master/Hospital_Management_System/src/main/webapp/img/doc1.jpg" alt="project-screenshot" width="1200" height="500/">
+<img src="https://github.com/Gaurav560/Project-Swastik/blob/master/Screenshots/Screenshot%20(536).png" alt="project-screenshot" width="1200" height="500/">
 
-<img src="https://github.com/Gaurav560/Project-Swastik/blob/master/Hospital_Management_System/src/main/webapp/img/doc7.jpg" alt="project-screenshot" width="1200" height="400/">
+<img src="https://github.com/Gaurav560/Project-Swastik/blob/master/Screenshots/Screenshot%20(524).png" alt="project-screenshot" width="1200" height="500/">
 
-<img src="https://github.com/Gaurav560/Project-Swastik/blob/master/Hospital_Management_System/src/main/webapp/img/h21.jpg" alt="project-screenshot" width="600" height="400/">
+<img src="https://github.com/Gaurav560/Project-Swastik/blob/master/Screenshots/Screenshot%20(525).png" alt="project-screenshot" width="1200" height="500/">
 
-<img src="https://github.com/Gaurav560/Project-Swastik/blob/master/Hospital_Management_System/src/main/webapp/img/h14.jpg" alt="project-screenshot" width="1200" height="400/">
+<img src="https://github.com/Gaurav560/Project-Swastik/blob/master/Screenshots/Screenshot%20(527).png" alt="project-screenshot" width="1200" height="500/">
+
+<img src="https://github.com/Gaurav560/Project-Swastik/blob/master/Screenshots/Screenshot%20(530).png" alt="project-screenshot" width="1200" height="500/">
+
+<img src="https://github.com/Gaurav560/Project-Swastik/blob/master/Screenshots/Screenshot%20(534).png" alt="project-screenshot" width="1200" height="500/">
+
+
 
 
 
