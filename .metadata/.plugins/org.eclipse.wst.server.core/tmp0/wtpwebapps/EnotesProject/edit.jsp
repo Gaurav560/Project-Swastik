@@ -32,11 +32,11 @@ if (user1 == null) {
 }
 
 .win {
-	color: #e63946
+	color: #abff4f;
 }
 }
 </style>
-<body>
+<body class="back">
 	<%
 		int noteId1 = Integer.parseInt(request.getParameter("note_id"));
 	postDao dao = new postDao(DBConnect.getConnection());

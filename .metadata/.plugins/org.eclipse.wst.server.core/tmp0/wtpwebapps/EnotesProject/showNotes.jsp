@@ -26,8 +26,19 @@ if (user3 == null) {
 	height: 15vh;
 	width: 15vh;
 }
+.back {
+	background: url(img/desert.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.back1{
+background-color:#70d6ff;
+
+}
 </style>
-<body>
+<body class="back">
 	<%@include file="all_component/navbar.jsp"%>
 	<%
 		String updateMsgString = (String) session.getAttribute("updateMsg");
@@ -69,7 +80,7 @@ if (user3 == null) {
 					List<post> pos = obj.getData(user3.getId());
 					for (post po : pos) {
 				%>
-				<div class="card mt-3">
+				<div class="card mt-3 back1">
 					<img alt="eNotes image" src="img/notess.png"
 						class="card-img-top mt-2 mx-auto kill">
 					<div class="card-body p-4">
@@ -96,7 +107,6 @@ if (user3 == null) {
 
 				<%
 					}
-
 				}
 				%>
 
@@ -110,6 +120,6 @@ if (user3 == null) {
 
 
 	</div>
-	<%@include file="all_component/footer.jsp"%>
+	
 </body>
 </html>

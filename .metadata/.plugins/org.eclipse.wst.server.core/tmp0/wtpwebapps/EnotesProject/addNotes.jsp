@@ -20,7 +20,7 @@
 </head>
 <style>
 .back{
-  background: url(img/plain2.jpg) no-repeat center center fixed; 
+  background: url(img/plaine.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -31,10 +31,10 @@ background:#eaba6b;
 color:#fc0002;
 }
 .win{
-color:#f8fa90}
+color:#ff5400;
 }</style>
-<body>
-<div class="container-fluid back">
+<body class="back">
+<div class="container-fluid">
 <%@include file="all_component/navbar.jsp" %>
 <h1 class="text-center mt-2 win">Add Your Notes</h1>
 <div class="container"><div class="row">

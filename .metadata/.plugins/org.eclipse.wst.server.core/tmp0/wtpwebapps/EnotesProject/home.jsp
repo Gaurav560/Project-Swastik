@@ -32,8 +32,10 @@ background:#eaba6b;
 color:#fc0002;
 }
 
+
+
 </style>
-<body>
+<body >
 
 <div class="container-fluid p-0 bg-custom3">
 <%@include file="all_component/navbar.jsp"%>

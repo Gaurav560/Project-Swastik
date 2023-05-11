@@ -31,10 +31,6 @@
 		<c:redirect url="../admin_login.jsp"></c:redirect>
 	</c:if>
 
-	<c:if test="${not empty sucMsg}">
-		<p class="text-center text-primary fs-3">${sucMsg}</p>
-		<c:remove var="sucMsg" scope="session" />
-	</c:if>
 
 
 	<c:if test="${not empty failMsg}">
