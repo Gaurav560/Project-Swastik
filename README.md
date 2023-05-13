@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://socialify.git.ci/Gaurav560/Project-Swastik/image?font=Source%20Code%20Pro&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Brick%20Wall&amp;stargazers=1&amp;theme=Dark" alt="project-image"></p>
 
-<p id="description">The Project is divided into three modules: Admin with log-in page, Doctor with log-in page, and User with Login page. I am attaching a demo video so you can understand my work.
+<p id="description">The Project is based on Hospital Mangement System Domain .It is a web application based on java stack technologies.It is divided into three modules: Admin with log-in page, Doctor with log-in page, and User with Login page. I am attaching a demo video so you can understand my work.
                              
 The functionalities of each module are:
 Admin:    
